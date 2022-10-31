@@ -11,6 +11,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- link fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <!-- link css -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="./css/font.css" />
@@ -63,33 +68,37 @@
       <div class="">
         <div class="grid">
           <div class="about-info bg-light">
-            <h2>Mục tiêu nghề nghiệp</h2>
-            <p class="text">
-              Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
-              của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
-              <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã
-              được trau dồi và không ngừng học hỏi để phát triển bản thân, cũng
-              như hoàn thành tốt nhất công việc được giao.
-            </p>
+            <div class="block">
+              <h2>Mục tiêu nghề nghiệp</h2>
+              <p class="text">
+                Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
+                Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+                <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã
+                được trau dồi và không ngừng học hỏi để phát triển bản thân,
+                cũng như hoàn thành tốt nhất công việc được giao.
+              </p>
+            </div>
           </div>
           <div class="about-info bg-grey">
-            <h2>Thông tin cá nhân</h2>
-            <ul class="text">
-              <li><b>Giới tính:</b> Nam</li>
-              <li><b>Ngày sinh:</b> 04/03/1994</li>
-              <li><b>Điện thoại:</b> (+84) 372170061</li>
-              <li><b>Email:</b> nhatnpmfx19824@funix.edu.vn</li>
-              <li>
-                <b>Địa chỉ:</b> 1803 đường Huỳnh Tấn Phát, thị trấn Nhà Bè,
-                huyện Nhà Bè, Hồ Chí Minh
-              </li>
-              <li><b>Website:</b> https://www.facebook.com/</li>
-            </ul>
-            <div class="about-icon-list">
-              <a href="#" class="about-icon"><i class="icon-twitter"></i></a>
-              <a href="#" class="about-icon"><i class="icon-facebook"></i></a>
-              <a href="#" class="about-icon"><i class="icon-gplus"></i></a>
-              <a href="#" class="about-icon"><i class="icon-linkedin"></i></a>
+            <div class="block">
+              <h2>Thông tin cá nhân</h2>
+              <ul class="text">
+                <li><b>Giới tính:</b> Nam</li>
+                <li><b>Ngày sinh:</b> 04/03/1994</li>
+                <li><b>Điện thoại:</b> (+84) 372170061</li>
+                <li><b>Email:</b> nhatnpmfx19824@funix.edu.vn</li>
+                <li>
+                  <b>Địa chỉ:</b> 1803 đường Huỳnh Tấn Phát, thị trấn Nhà Bè,
+                  huyện Nhà Bè, Hồ Chí Minh
+                </li>
+                <li><b>Website:</b> https://www.facebook.com/</li>
+              </ul>
+              <div class="about-icon-list">
+                <a href="#" class="about-icon"><i class="icon-twitter"></i></a>
+                <a href="#" class="about-icon"><i class="icon-facebook"></i></a>
+                <a href="#" class="about-icon"><i class="icon-gplus"></i></a>
+                <a href="#" class="about-icon"><i class="icon-linkedin"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -282,11 +291,11 @@
 
     <!-- bắt đầu chứng chỉ - giải thưởng -->
     <section id="certificate" class="bg-grey">
-      <div class="container-lg">
+      <div class="container">
         <h2>Chứng chỉ - Giải thưởng</h2>
         <div class="certificate-body grid">
           <div class="certificate-border flex">
-            <div class="certificate-content-img">
+            <div class="certificate-content-img container-2">
               <img src="images/Cert_DBI.png" alt="" />
             </div>
             <div class="certificate-content flex flex-column">
@@ -300,7 +309,9 @@
             </div>
           </div>
           <div class="certificate-border flex">
-            <div><img src="images/Cert_PRF.png" alt="" /></div>
+            <div class="container-2">
+              <img src="images/Cert_PRF.png" alt="" />
+            </div>
             <div class="certificate-content flex flex-column border-none">
               <div class="certicicate-text">
                 <b>Chứng chỉ lập trình Javascript</b>
@@ -312,7 +323,9 @@
             </div>
           </div>
           <div class="certificate-border flex border-none">
-            <div><img src="images/Cert_WEB.png" alt="" /></div>
+            <div class="container-2">
+              <img src="images/Cert_WEB.png" alt="" />
+            </div>
             <div class="certificate-content flex flex-column border-none">
               <div class="certicicate-text">
                 <b>Chứng chỉ thiết kế database - FUNiX</b>
@@ -333,138 +346,140 @@
       <div class="container">
         <h2>Dự án</h2>
       </div>
-      <div class="project-info">
-        <div class="container-lg grid">
-          <div
-            class="project-item-container"
-            onclick="location.href='project-charter.html';"
-          >
-            <div class="project-item-list">
-              <img src="images/project_1.png" alt="" />
-              <div class="project-title">CV cá nhân</div>
-              <div class="project-detail flex">
-                <div class="project-year">2021</div>
-                <div class="project-icon">
-                  <i class="icon-user-1 text"></i>
-                  <span class="text">FUNiX</span>
+      <div class="container">
+        <div class="project-info">
+          <div class="container-lg grid">
+            <div
+              class="project-item-container"
+              onclick="location.href='project-charter.html';"
+            >
+              <div class="project-item-list">
+                <img src="images/project_1.png" alt="" />
+                <div class="project-title">CV cá nhân</div>
+                <div class="project-detail flex">
+                  <div class="project-year">2021</div>
+                  <div class="project-icon">
+                    <i class="icon-user-1 text"></i>
+                    <span class="text">FUNiX</span>
+                  </div>
+                  <div class="project-icon">
+                    <i class="icon-lamp text"></i>
+                    <span class="text">Developer</span>
+                  </div>
                 </div>
-                <div class="project-icon">
-                  <i class="icon-lamp text"></i>
-                  <span class="text">Developer</span>
+                <div class="project-table">
+                  <table>
+                    <tr>
+                      <td class="text td-left">Mô tả</td>
+                      <td class="text td-right">
+                        Trang Web CV cá nhân online. Gồn các thông tin cá nhân
+                        cũng như kỹ năng nghề nghiệp.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text td-left">Nhiệm vụ</td>
+                      <td class="text td-right">
+                        <p>- Phát triển code.</p>
+                        <p>- Review code.</p>
+                        <p>- Tối ưu code.</p>
+                        <p>- Xử lý lỗi.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text td-left">Công nghệ</td>
+                      <td class="text">- HTML, CSS.</td>
+                    </tr>
+                  </table>
                 </div>
-              </div>
-              <div class="project-table">
-                <table>
-                  <tr>
-                    <td class="text td-left">Mô tả</td>
-                    <td class="text td-right">
-                      Trang Web CV cá nhân online. Gồn các thông tin cá nhân
-                      cũng như kỹ năng nghề nghiệp.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text td-left">Nhiệm vụ</td>
-                    <td class="text td-right">
-                      <p>- Phát triển code.</p>
-                      <p>- Review code.</p>
-                      <p>- Tối ưu code.</p>
-                      <p>- Xử lý lỗi.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text td-left">Công nghệ</td>
-                    <td class="text">- HTML, CSS.</td>
-                  </tr>
-                </table>
               </div>
             </div>
-          </div>
-          <div
-            class="project-item-container"
-            onclick="location.href='project-charter.html';"
-          >
-            <div class="project-item-list">
-              <img src="images/project_2.png" alt="" />
-              <div class="project-title">Trang Web quản lý thú cưng</div>
-              <div class="project-detail flex">
-                <div class="project-year">2021</div>
-                <div class="project-icon">
-                  <i class="icon-user-1 text"></i>
-                  <span class="text">FUNiX</span>
+            <div
+              class="project-item-container"
+              onclick="location.href='project-charter.html';"
+            >
+              <div class="project-item-list">
+                <img src="images/project_2.png" alt="" />
+                <div class="project-title">Trang Web quản lý thú cưng</div>
+                <div class="project-detail flex">
+                  <div class="project-year">2021</div>
+                  <div class="project-icon">
+                    <i class="icon-user-1 text"></i>
+                    <span class="text">FUNiX</span>
+                  </div>
+                  <div class="project-icon">
+                    <i class="icon-lamp text"></i>
+                    <span class="text">Developer</span>
+                  </div>
                 </div>
-                <div class="project-icon">
-                  <i class="icon-lamp text"></i>
-                  <span class="text">Developer</span>
+                <div class="project-table">
+                  <table>
+                    <tr>
+                      <td class="text td-left">Mô tả</td>
+                      <td class="text td-right">
+                        Ứng dụng giúp quản lý các thông tin của thú cưng như:
+                        Cân nặng, giống, tình trạng tiêm chủng, ... Bao gồn các
+                        chứ năng thêm / sửa / xoá.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text td-left">Nhiệm vụ</td>
+                      <td class="text td-right">
+                        <p>- Phát triển code.</p>
+                        <p>- Review code.</p>
+                        <p>- Tối ưu code.</p>
+                        <p>- Xử lý lỗi.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text td-left">Công nghệ</td>
+                      <td class="text td-right">- HTML, CSS, Javascript.</td>
+                    </tr>
+                  </table>
                 </div>
-              </div>
-              <div class="project-table">
-                <table>
-                  <tr>
-                    <td class="text td-left">Mô tả</td>
-                    <td class="text td-right">
-                      Ứng dụng giúp quản lý các thông tin của thú cưng như: Cân
-                      nặng, giống, tình trạng tiêm chủng, ... Bao gồn các chứ
-                      năng thêm / sửa / xoá.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text td-left">Nhiệm vụ</td>
-                    <td class="text td-right">
-                      <p>- Phát triển code.</p>
-                      <p>- Review code.</p>
-                      <p>- Tối ưu code.</p>
-                      <p>- Xử lý lỗi.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text td-left">Công nghệ</td>
-                    <td class="text td-right">- HTML, CSS, Javascript.</td>
-                  </tr>
-                </table>
               </div>
             </div>
-          </div>
-          <div
-            class="project-item-container"
-            onclick="location.href='project-charter.html';"
-          >
-            <div class="project-item-list">
-              <img src="images/project_3.png" alt="" />
-              <div class="project-title">Trang Web xem tin tức</div>
-              <div class="project-detail flex">
-                <div class="project-year">2021</div>
-                <div class="project-icon">
-                  <i class="icon-user-1 text"></i>
-                  <span class="text">FUNiX</span>
+            <div
+              class="project-item-container"
+              onclick="location.href='project-charter.html';"
+            >
+              <div class="project-item-list">
+                <img src="images/project_3.png" alt="" />
+                <div class="project-title">Trang Web xem tin tức</div>
+                <div class="project-detail flex">
+                  <div class="project-year">2021</div>
+                  <div class="project-icon">
+                    <i class="icon-user-1 text"></i>
+                    <span class="text">FUNiX</span>
+                  </div>
+                  <div class="project-icon text">
+                    <i class="icon-lamp text"></i>
+                    <span class="text">Developer</span>
+                  </div>
                 </div>
-                <div class="project-icon text">
-                  <i class="icon-lamp text"></i>
-                  <span class="text">Developer</span>
+                <div class="project-table">
+                  <table>
+                    <tr>
+                      <td class="text td-left">Mô tả</td>
+                      <td class="text td-right">
+                        Trang Web xem tin tức từ nhiều nguồn khác nhau, người
+                        dùng có thể tìm kiếm các tin tức dựa theo các từ khoá.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text td-left">Nhiệm vụ</td>
+                      <td class="text td-right">
+                        <p>- Phát triển code.</p>
+                        <p>- Review code.</p>
+                        <p>- Tối ưu code.</p>
+                        <p>- Xử lý lỗi.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text td-left">Công nghệ</td>
+                      <td class="text">- HTML, CSS, Javascript.</td>
+                    </tr>
+                  </table>
                 </div>
-              </div>
-              <div class="project-table">
-                <table>
-                  <tr>
-                    <td class="text td-left">Mô tả</td>
-                    <td class="text td-right">
-                      Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng
-                      có thể tìm kiếm các tin tức dựa theo các từ khoá.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text td-left">Nhiệm vụ</td>
-                    <td class="text td-right">
-                      <p>- Phát triển code.</p>
-                      <p>- Review code.</p>
-                      <p>- Tối ưu code.</p>
-                      <p>- Xử lý lỗi.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text td-left">Công nghệ</td>
-                    <td class="text">- HTML, CSS, Javascript.</td>
-                  </tr>
-                </table>
               </div>
             </div>
           </div>
@@ -479,20 +494,24 @@
         <ul class="flex">
           <li>
             <div class="footer-icon-list flex">
-              <span class="footer-icon"><i class="icon-facebook"></i></span>
+              <span class="footer-icon"
+                ><i class="fa-brands fa-facebook"></i
+              ></span>
               <span class="text">Facebook</span>
             </div>
           </li>
           <li>
             <div class="footer-icon-list flex">
-              <span class="footer-icon"><i class="icon-linkedin"></i></span>
+              <span class="footer-icon"
+                ><i class="fa-brands fa-linkedin"></i
+              ></span>
               <span class="text">Linkedin</span>
             </div>
           </li>
           <li>
             <div class="footer-icon-list flex">
-              <span class="footer-icon github-none"
-                ><i class="icon-github-circled"></i>
+              <span class="footer-icon"
+                ><i class="fa-brands fa-github"></i>
               </span>
               <span class="text">Github</span>
             </div>

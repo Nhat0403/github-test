@@ -182,16 +182,12 @@ ol {
   font-size: 1.6rem;
 }
 
-#about h2 {
-  margin-bottom: 2rem;
-}
-
 #about ul {
   padding: 0;
 }
 
 .about-icon-list {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about-icon {
@@ -480,7 +476,7 @@ tr:nth-child(2) {
 }
 
 .project-table tbody {
-  height: 50vh;
+  height: 290px;
 }
 /* kết thúc CSS table */
 /* kết thúc CSS fonts */
@@ -516,25 +512,16 @@ tr:nth-child(2) {
 
 /* Tạo icon hình tròn */
 .footer-icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #339af0;
-  color: #fff;
+  color: #339af0;
   font-weight: 600;
 }
 
 .footer-icon i {
-  scale: 0.8;
-}
-
-#footer .github-none {
-  background: none;
-  color: #339af0;
-  scale: 2.3;
+  scale: 2;
+  margin-right: 5px;
 }
 /* kết thúc footer */
 
@@ -553,137 +540,8 @@ tr:nth-child(2) {
   border: 0.5rem solid #fff;
 }
 
-/* tablet */
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 8px;
-  }
-
-  /* bắt đầu navbar */
-  #navbar .nav-name {
-    width: 0px;
-  }
-
-  .nav-item-list {
-    width: 100%;
-    flex-direction: row-reverse;
-  }
-
-  .nav-item-list h3 {
-    font-size: 1.5rem;
-  }
-
-  .nav-avatar-img {
-    display: none;
-  }
-  /* kết thúc navbar */
-
-  /* bắt đầu thông tin cá nhân */
-  .bg-light b {
-    font-weight: 400;
-    color: #868e96;
-  }
-
-  .bg-grey b {
-    font-weight: 500;
-  }
-  /* kết thúc thông tin cá nhân */
-
-  /* bắt đầu thông tin nghề nghiệp */
-  #job-info .grid {
-    grid-template-columns: 1fr 1fr;
-    align-items: flex-start;
-  }
-
-  #job-info .grid .flex {
-    flex-direction: column;
-  }
-
-  #job-info .grid .flex > * {
-    height: auto;
-    align-items: flex-start;
-  }
-  #job-info .job-info-head {
-    flex-direction: row !important;
-  }
-  #job-info {
-    margin: 0 auto;
-  }
-
-  .job-info-inner {
-    max-width: 100%;
-  }
-  /* kết thúc thông tin nghề nghiệp */
-
-  /* bắt đầu chứng chỉ - giải thưởng */
-  #certificate,
-  #project {
-    padding: 2rem;
-  }
-
-  .certificate-border {
-    flex-direction: column;
-    height: 33.5rem;
-    justify-content: flex-start;
-    padding: 1rem 0;
-  }
-
-  .certificate-body img,
-  .certificate-content {
-    height: auto;
-  }
-
-  .certificate-body img {
-    width: 95%;
-    margin-bottom: 2rem;
-  }
-
-  .certificate-content {
-    padding-left: 1rem;
-  }
-
-  .certificate-content-img {
-    margin-right: 1rem;
-    border-right: 1px solid #d6c08d;
-  }
-  /* kết thúc chứng chỉ - giải thưởng */
-
-  /* bắt đầu table dự án */
-  .project-info .grid {
-    display: flex;
-    gap: 2rem !important;
-  }
-
-  .project-title {
-    font-weight: 500;
-    display: flex;
-    padding: 1.5rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .project-detail {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    padding: 1rem;
-  }
-
-  .project-year {
-    grid-area: 1 / 1 / 3 / 1;
-    justify-self: flex-start;
-    padding: 0.25rem 0.5rem;
-  }
-
-  .project-icon {
-    width: 10rem;
-  }
-  /* kết thúc table dự án */
-}
-/* kết thúc tablet */
-
 /* moblie */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
   html {
     font-size: 15px;
     margin: 0;
@@ -724,6 +582,23 @@ tr:nth-child(2) {
   }
 
   /* mobile about */
+  #navbar .nav-name {
+    width: 0px;
+  }
+
+  .nav-item-list {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .nav-item-list h3 {
+    font-size: 1.5rem;
+  }
+
+  .nav-avatar-img {
+    display: none;
+  }
+
   #about .grid {
     grid-template-columns: 1fr;
   }
@@ -731,28 +606,24 @@ tr:nth-child(2) {
   .about-info {
     padding: 0;
     max-width: 500px;
-    overflow: hidden;
   }
 
   .about-info .text {
     font-size: 1.5rem !important;
   }
 
-  #about h2,
-  #about .text,
-  .about-icon-list {
-    margin: 2rem;
+  /* mobile thông tin nghề nghiệp */
+  #job-info {
+    display: block;
   }
 
-  /* mobile thông tin nghề nghiệp */
-
-  #job-info .grid {
-    grid-template-columns: 1fr;
+  #job-info .container {
+    display: block;
+    width: 100%;
   }
 
   #job-info .flex {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
   }
 
   .job-info-inner {
@@ -761,13 +632,41 @@ tr:nth-child(2) {
 
   #job-info .job-info-head {
     display: flex;
-  }
-
-  .so-thich-icon-list {
     gap: 0;
   }
 
+  .so-thich-icon-list {
+    gap: 0.5rem;
+  }
+
+  .so-thich-icon-list .text-center {
+    width: 5rem;
+  }
+
+  .so-thich-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .so-thich-icon-list .text {
+    font-size: 0.75rem;
+  }
+
+  .kinh-nghiem,
+  .ky-nang,
+  .ngon-ngu,
+  .hoc-van,
+  .hoat-dong,
+  .so-thich {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
   /* mobibe chứng chỉ - giải thưởng */
+  #certificate {
+    padding: 2rem;
+  }
+
   #certificate .grid {
     grid-template-columns: 1fr;
   }
@@ -786,12 +685,26 @@ tr:nth-child(2) {
   #certificate .certificate-border {
     padding: 2rem 0;
     height: fit-content;
+    flex-direction: column;
   }
 
   /* mobile dự án */
+  #project {
+    padding: 0;
+  }
+
+  #project h2 {
+    margin-left: 2rem;
+  }
+
   #project .grid {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .project-title,
+  .project-detail {
+    padding: 0.5rem;
   }
 
   /* mobile footer */
@@ -804,6 +717,190 @@ tr:nth-child(2) {
   }
 
   .github-none {
-    scale: 4.1 !important;
+    scale: 4 !important;
+  }
+
+  #project {
+    overflow: hidden;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 8px;
+  }
+
+  /* bắt đầu tablet navbar */
+  #navbar .container {
+    width: 70%;
+  }
+
+  #navbar .nav-name {
+    width: 0px;
+  }
+
+  .nav-item-list {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .nav-item-list h3 {
+    font-size: 1.5rem;
+  }
+
+  .nav-avatar-img {
+    display: none;
+  }
+  /* kết thúc tablet navbar */
+
+  /* bắt đầu tablet thông tin cá nhân */
+  .bg-light b {
+    font-weight: 400;
+    color: #868e96;
+  }
+
+  .bg-grey b {
+    font-weight: 500;
+  }
+  /* kết thúc tablet thông tin cá nhân */
+
+  /* bắt đầu tablet thông tin nghề nghiệp */
+  #job-info .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+  }
+
+  #job-info .grid .flex {
+    flex-direction: column;
+  }
+
+  #job-info .grid .flex > * {
+    height: auto;
+    align-items: flex-start;
+  }
+  #job-info .job-info-head {
+    flex-direction: row !important;
+  }
+  #job-info {
+    margin: 0 auto;
+  }
+
+  .job-info-inner {
+    max-width: 100%;
+  }
+  /* kết thúc tablet thông tin nghề nghiệp */
+
+  /* bắt đầu tablet chứng chỉ - giải thưởng */
+  #certificate,
+  #project {
+    padding: 2rem;
+  }
+
+  .certificate-border {
+    flex-direction: column;
+    height: 33.5rem;
+    justify-content: flex-start;
+    padding: 1rem 0;
+  }
+
+  .certificate-body img,
+  .certificate-content {
+    height: auto;
+  }
+
+  .certificate-body img {
+    width: 95%;
+    margin-bottom: 2rem;
+  }
+
+  .certificate-content {
+    padding-left: 1rem;
+  }
+
+  .certificate-content-img {
+    margin-right: 1rem;
+    border-right: 1px solid #d6c08d;
+  }
+  /* kết thúc tablet chứng chỉ - giải thưởng */
+
+  /* bắt đầu tablet dự án */
+  .project-info .grid {
+    display: flex;
+    gap: 2rem !important;
+  }
+
+  .project-title {
+    font-weight: 500;
+    display: flex;
+    padding: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-detail {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 1rem;
+  }
+
+  .project-year {
+    grid-area: 1 / 1 / 3 / 1;
+    justify-self: flex-start;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .project-icon {
+    width: 10rem;
+  }
+  /* kết thúc tablet dự án */
+}
+/* kết thúc tablet */
+
+@media (min-width: 1024px) {
+  .nav-item-list {
+    width: 17%;
+  }
+
+  .kinh-nghiem,
+  .ky-nang,
+  .ngon-ngu {
+    height: 60rem;
+    width: 30rem;
+  }
+
+  .hoc-van,
+  .hoat-dong,
+  .so-thich {
+    height: 36.5rem;
+    width: 30rem;
+  }
+
+  .so-thich-icon-list {
+    gap: 0;
+    margin-left: -1rem;
+  }
+
+  #certificate img {
+    width: 95%;
+    height: auto;
+  }
+
+  .certicicate-text {
+    width: fit-content;
+  }
+
+  .container-2 {
+    width: 95%;
+  }
+
+  .project-table tbody {
+    height: 38rem;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+    font-weight: 600;
   }
 }
