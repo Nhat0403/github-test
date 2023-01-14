@@ -65,6 +65,7 @@ section:hover {
 
 .desc-title {
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .icon {
@@ -155,7 +156,7 @@ section:hover {
 }
 
 /* tablet */
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   body #main {
     display: flex;
     flex-direction: column;
@@ -190,5 +191,5 @@ section:hover {
 }
 
 /* mobile */
-@media only screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
 }
